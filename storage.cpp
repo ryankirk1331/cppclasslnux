@@ -685,3 +685,182 @@
 
 //     return 0;
 // }
+
+// // # is even? /Selection Homework / My Answer************
+
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     if (n % 2 ==0){
+//         cout<<(n % 10)<<"\n";
+//     }
+//         else
+//         {
+//             if (n < 1000) {
+//                 cout<< (n % 100) <<"\n";
+//             }
+//             else if(n < 1000000){
+//                 cout<<(n % 10000);
+//             }
+//                 else {
+//                     cout<<(n * -1)<<"\n";                }
+//         }
+
+//     return 0;
+// }
+
+// // is even? /Mod Homework/Instructor Answer*******
+
+
+// // Same or very close to above
+
+// # Last 3 Digits /Selection Homework / My Answer************
+
+// int main(){
+//     int num;
+//     cin>>num;
+
+//     if (num < 10000) {
+//         cout<<"This is a small number!"<<"\n";
+//     }
+//         else
+//         {
+//             int a = num % 10;
+//             num /= 10;
+//             int b = num % 10;
+//             num /=10;
+//             int c = num % 10;
+//             int res = a + b + c;
+
+//             if (res % 2 != 0){
+//                 cout<<"This is a great number"<<"\n";
+//             }
+            
+//                 else {
+//                     if (a % 2 != 0 || b % 2 != 0 || c % 2 != 0){
+//                     cout<<"This is a good number"<<"\n";                   
+//                 } 
+//                     else
+//                     {
+//                         cout<<"This is a bad number"<<"\n";
+//                     }
+//             }
+//         }
+
+//     return 0;
+// }
+
+// Last 3 digits /Mod Homework/Instructor Answer*******
+
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     if (n < 10000)
+//         cout<<"This is a small number"<<"\n";
+//     else
+//     {
+//         int digit1 = n%10;
+//         n = n/10;
+//         int digit2 = n%10;
+//         n = n/10;
+//         int digit3 = n%10;
+        
+//         int sum = digit1+digit2+digit3;
+
+//         if ((sum%2) != 0) 
+//             cout<<"this is a great number/n";
+//         else{
+//             bool is_digit1_odd = (digit1 % 2 == 1);
+//             bool is_digit2_odd = (digit2 % 2 == 1);
+//             bool is_digit3_odd = (digit3 % 2 == 1);
+
+//             if (is_digit1_odd || is_digit2_odd || is_digit3_odd) {
+//                 cout<<"this is a good number\n";
+//             }
+//             else
+//                 cout<<"this is a bad number"<<"\n";
+//         }
+//     }
+//     return 0;
+
+// }
+
+// Arithmetic /Selection Homework / My Answer************
+
+// int main(){
+//     int a, b;
+//     cin>>a>>b;
+//     bool a_is_odd = (a % 2 == 1);
+//     bool b_is_odd = (b % 2 == 1);
+
+//     if (a_is_odd && b_is_odd){
+//         cout<<(a*b)<<"\n";
+//     }
+//     else if (!a_is_odd && !b_is_odd){
+//         cout<<(a/ b)<<"\n";
+//     }
+//     else if (a_is_odd && !b_is_odd){
+//         cout<<(a+b)<<"\n";
+//     }
+//     else
+//     {
+//         cout<<(a-b)<<"\n";
+//     }
+    
+
+//     return 0;
+// }
+
+// // Arithmetic /Mod Homework/Instructor Answer*******
+
+// int main() {
+// 	int a, b;
+// 	cin >> a >> b;
+
+// 	bool is_a_even = (a % 2 == 0);
+// 	bool is_b_even = (b % 2 == 0);
+
+// 	if (!is_a_even && !is_b_even)
+// 		cout << a * b << "\n";
+// 	else if (is_a_even && is_b_even)
+// 		cout << a / b << "\n";
+// 	else if (!is_a_even && is_b_even)
+// 		cout << a + b << "\n";
+// 	else
+// 		cout << a - b << "\n";
+
+// 	return 0;
+// }
+
+// Sort 3 Numbers /Selection Homework / My Answer************
+
+// int main(){
+//     int a, b, c, tmp;
+//     cin>>a>>b>>c;
+    
+//     if (a > b){
+//         tmp = b;
+//         b = a;
+//         a = tmp;
+//     }
+//     if (b > c){
+//         tmp = c;
+//         c = b;
+//         b = tmp;
+//     }
+//     if (a > b){
+//         tmp = b;
+//         b = a;
+//         a = tmp;
+//     }
+
+//     cout<<a<<" "<<b<<" "<<c;
+
+//     return 0;
+// }
+
+// // // Arithmetic /Mod Homework/Instructor Answer*******
+
+// // Same as above
